@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+$navbar-default-bg: #312312;
+$light-orange: #ff8c00;
+$navbar-default-color: $light-orange;
+$sidebar-width: 160px;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+.sidebar {
+  height: 100%;
+  width: $sidebar-width;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $navbar-default-bg;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.main-container {
+  margin-left: $sidebar-width;
+}
